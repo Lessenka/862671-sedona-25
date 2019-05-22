@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+		
+	</head>
+	<body>
+		
+		<header class="main">
+			<nav class="main-nav">	
+				<ul class="site-navigation">
+					<li><a href="information.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="album.html">ФОТО И ВИДЕО</a></li>
+					<li><a href="cart.html">КАРТА ШТАТА</a></li>
+					<li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+				</ul>	
+			</nav>
+			<div class="main-logo">
+				<a href="infex.html"><img src="logo.png"></a> 
+			</div>
+		</header>
+		<main>
+			<section class="form_filter">
+				<div class="form_filter_infrastructure">
+					<form>
+						<p>ИНФРАСТРУКТУРА:</p>
+						<p><input type="checkbox" name="pool" value="a1" checked >БАССЕЙН<br>
+							<input type="checkbox" name="parking" value="a2" >ПАРКОВКА<br>
+						<input type="checkbox" name="wi-fi" value="a3" >WI-FI</p>
+						
+					</form>
+					<form>
+						<p>ТИП ЖИЛЬЯ:</p>
+						<p><input type="checkbox" name="hotel" value="a4" checked >ГОСТИНИЦА<br>
+							<input type="checkbox" name="motel" value="a5" checked>МОТЕЛЬ<br>
+						<input type="checkbox" name="apartment" value="a6" checked>АПАРТАМЕНТЫ</p>
+					</form>
+				</div>
+				<div>
+					<p class="cost">СТОИМОСТЬ В СУТКИ(Р):</p>
+					<form class="appointment-cost" action="https://echo.htmlacademy.ru" method="post">
+						<p><input type="text" name="from" value="" placeholder="ОТ 0">
+						<input type="text" name="to" value="" placeholder="ДО 3000"></p>
+						<p><input type="range" min="0" max="3000" step="10" value="50"> </p>
+						<p><input type="button" value=" ПОКАЗАТЬ "></p>
+					</form> 
+				</div>
+			</section>
+			<section class="sorting">
+				<div class="sorting-result">
+					<p>НАЙДЕНО:3</p>
+				</div>
+				<div class="sorting-form">
+					<ul class="sorting-form-choice">
+						<li>ПО ЦЕНЕ</li>	
+						<li><span style="text-decoration: underline;">ПО ТИПУ</span></li>	
+						<li><span style="text-decoration: underline;">ПО РЕЙТИНГУ</span></li>		
+					</ul>
+				</div>
+				<div class="sorting-picture">
+					<a></a>
+					<a></a>
+				</div>
+			</section>
+			<section class="form_sort">
+				<div>
+					<div class="photo-result">
+						<a href="photo1.jpg"></a>
+					</div>
+					<div class="form-sort-hotel">
+						<div>
+							<p class="hotel-name">AMARA RESORT & SPA</p>
+						</div>
+						<div>
+							<p class="type-apartament">ГОСТИНИЦА</p>
+							<form class="more" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+							</form>
+						</div>
+						<div>
+							<p class="cost-apartament">ОТ 4000 Р.</p>
+							<form class="book" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+							</form>
+						</div>
+					</div>
+					<div class="form-sort-top">
+						<div class="form-sort-top-stars" >
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="form-sort-top-total">
+							<p >РЕЙТИНГ:8,5</p>
+							
+						</div>
+					</div>
+				</div>
+				
+			
+				<div>
+					<div class="photo-result">
+						<a href="photo2.jpg"></a>
+					</div>
+					<div class="form-sort-hotel">
+						<div>
+							<p class="hotel-name">DESERT QUAIL INN</p>
+						</div>
+						<div>
+							<p class="type-apartament">МОТЕЛЬ</p>
+							<form class="more" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+							</form>
+						</div>
+						<div>
+							<p class="cost-apartament">ОТ 3000 Р.</p>
+							<form class="book" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+							</form>
+						</div>
+					</div>
+					<div class="form-sort-top">
+						<div class="form-sort-top-stars" >
+							<span></span>
+							<span></span>
+							<span></span>
+							
+						</div>
+						<div class="form-sort-top-total">
+							<p >РЕЙТИНГ:8,9</p>
+							
+						</div>
+					</div>
+				</div>
+				
+			
+				<div>
+					<div class="photo-result">
+						<a href="photo3.jpg"></a>
+					</div>
+					<div class="form-sort-hotel">
+						<div>
+							<p class="hotel-name">VILLAS AT POCO DIABLO</p>
+						</div>
+						<div>
+							<p class="type-apartament">АПАРТАМЕНТЫ</p>
+							<form class="more" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+							</form>
+						</div>
+						<div>
+							<p class="cost-apartament">ОТ 2000 Р.</p>
+							<form class="book" action="https://echo.htmlacademy.ru" method="post">
+								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+							</form>
+						</div>
+					</div>
+					<div class="form-sort-top">
+						<div class="form-sort-top-stars" >
+							<span></span>
+							<span></span>
+							
+							
+						</div>
+						<div class="form-sort-top-total">
+							<p >РЕЙТИНГ:9,2</p>
+							
+						</div>
+					</div>
+				</div>
+				
+			</section>
+		</main>		
+		<footer class="main-footer">
+			<div class="main-footer-left">
+				<a href="#">#VISITSEDONA</a>
+			</div>
+			<div class="footer-social">
+				<ul>
+					<li><a class="social-button" href="#">Твиттер</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="main-footer-right">
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="htmlacademy.png"/> website by htmlacademy.ru</a>
+			</div>
+		</footer>
+	</body>
+</html>
