@@ -17,24 +17,49 @@
 				</ul>	
 			</nav>
 			<div class="main-logo">
-				<a href="infex.html"><img src="img/logo-sedona.svg" width="100" height="50" alt="Седона"></a> 
+				<a href="index.html" aria-label="Переход на главную страницу Седоны"><img src="img/logo-sedona.svg" width="100" height="50"></a> 
 			</div>
 		</header>
 		<main>
 			<section class="form_filter">
 				<div class="form_filter_infrastructure">
-					<form>
+				
+					<form class="filter" metod="get" action="https://echo.htmlacademy.ru">
 						<p>ИНФРАСТРУКТУРА:</p>
-						<p><input type="checkbox" name="pool" value="a1" checked >БАССЕЙН<br>
-							<input type="checkbox" name="parking" value="a2" >ПАРКОВКА<br>
-						<input type="checkbox" name="wi-fi" value="a3" >WI-FI</p>
-						
+						<ul> 
+							<li>
+								<input type="checkbox" name="pool" id="a1" checked >
+								<label for="a1"> БАССЕЙН </label>
+							</li>
+							<li>
+								<input type="checkbox" name="parking" id="a2" checked >
+								<label for="a2"> ПАРКОВКА</label>
+							</li>
+							<li>
+								<input type="checkbox" name="wi-fi" id="a3" checked >
+								<label for="a3"> WI-FI</label>
+							</li>
+							
+						</ul>
 					</form>
-					<form>
+					<form class="filter" metod="get" action="https://echo.htmlacademy.ru">
 						<p>ТИП ЖИЛЬЯ:</p>
-						<p><input type="checkbox" name="hotel" value="a4" checked >ГОСТИНИЦА<br>
-							<input type="checkbox" name="motel" value="a5" checked>МОТЕЛЬ<br>
-						<input type="checkbox" name="apartment" value="a6" checked>АПАРТАМЕНТЫ</p>
+						<ul> 
+							<li>
+								<input type="checkbox" name="hotel" id="a4" checked >
+								<label for="a4"> ГОСТИНИЦА </label>
+							</li>
+							<li>
+								<input type="checkbox" name="motel" id="a5" checked >
+								<label for="a5"> МОТЕЛЬ </label>
+							</li>
+							<li>
+								<input type="checkbox" name="apartment" id="a6" checked >
+								<label for="a6"> АПАРТАМЕНТЫ </label>
+							</li> 
+						</ul>
+						
+						
 					</form>
 				</div>
 				<div>
@@ -43,7 +68,7 @@
 						<p><input type="text" name="from" value="" placeholder="ОТ 0">
 						<input type="text" name="to" value="" placeholder="ДО 3000"></p>
 						<p><input type="range" min="0" max="3000" step="10" value="50"> </p>
-						<p><input type="button" value=" ПОКАЗАТЬ "></p>
+						<button class="button" tabindex="0" >ПОКАЗАТЬ</button>
 					</form> 
 				</div>
 			</section>
@@ -59,8 +84,8 @@
 					</ul>
 				</div>
 				<div class="sorting-picture">
-					<a><img src="img/icon-down-dir.svg" width="10" height="10" alt="Вверхерх"></a>
-					<a><img src="img/icon-up-dir.svg" width="10" height="10" alt="Вниз"></a>
+					<a aria-label="Сортировка от большего к меньшему"><img src="img/icon-down-dir.svg" width="10" height="10"></a>
+					<a aria-label="Сортировка от меньшего к большему"><img src="img/icon-up-dir.svg" width="10" height="10" alt="Вниз"></a>
 				</div>
 			</section>
 			<section class="form_sort">
@@ -75,22 +100,22 @@
 						<div>
 							<p class="type-apartament">ГОСТИНИЦА</p>
 							<form class="more" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+								<button class="button" tabindex="0">ПОДРОБНЕЕ</button>
 							</form>
 						</div>
 						<div>
 							<p class="cost-apartament">ОТ 4000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 						</div>
 						<div class="form-sort-top-total">
 							<p >РЕЙТИНГ:8,5</p>
@@ -111,21 +136,21 @@
 						<div>
 							<p class="type-apartament">МОТЕЛЬ</p>
 							<form class="more" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+								<button class="button" tabindex="0">ПОДРОБНЕЕ</button>
 							</form>
 						</div>
 						<div>
 							<p class="cost-apartament">ОТ 3000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 							
 						</div>
 						<div class="form-sort-top-total">
@@ -147,20 +172,20 @@
 						<div>
 							<p class="type-apartament">АПАРТАМЕНТЫ</p>
 							<form class="more" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ПОДРОБНЕЕ"></p>
+								<button class="button" tabindex="0">ПОДРОБНЕЕ</button>
 							</form>
 						</div>
 						<div>
 							<p class="cost-apartament">ОТ 2000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<p><input type="button" value="ЗАБРОНИРОВАТЬ"></p>
+								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 							
 							
 							
@@ -180,14 +205,14 @@
 			</div>
 			<div class="footer-social">
 				
-				<a class="social-button" href="#"><img src="img/twitter.png"/></a>
-				<a class="social-button" href="#"><img src="img/fb-icon.png" width="50" height="50"/></a>
-				<a class="social-button" href="#"><img src="img/youtube.png" width="50" height="50"/></a>
+			<a class="social-button" href="#" aria-label="Седона на Твиттере"><img src="img/twitter.png"/></a>
+				<a class="social-button" href="#" aria-label="Седона на Фейсбуке"><img src="img/fb-icon.png" width="50" height="50"/></a>
+				<a class="social-button" href="#" aria-label="Седона на YouTube"><img src="img/youtube.png" width="50" height="50"/></a>
 				
 			</div>
 			<div class="main-footer-right">
 				<a class="main-footer-name">website by</a>
-				<a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="50" height="50"/> </a>
+			<a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на лендинг интенсива "Профессиональный HTML и CSS, уровень 1"><img src="img/logo-htmlacademy.svg" width="50" height="50"/> </a>
 				
 			</div>
 			
