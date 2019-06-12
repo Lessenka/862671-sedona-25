@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+	
+	
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	background-position: top center;
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+a {
+	text-decoration: none;
+	font-weight:bold;
+}
+.main-nav{
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.site-navigation
+{
+	list-style: none;
+}
+.site-navigation .active a{
+	color: #766357;
+	background-color: #FFFFFF;
+}
+.site-navigation a:hover
+{
+	color: #81b3d2;
+	background-color: #FFFFFF;
+}
+.site-navigation a:focus
+{
+	color: #c7c7c7;
+	background-color: #FFFFFF;
+}
+
+.container{
+	text-align: center;
+}
+.block-welcome{
+
+	background:url(/img/background.jpg)no-repeat;
+}
+
+.block-title{
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.block-title p{
+	font-size: 14px;
+	line-height: 26px;
+}
+.block-title h1{
+	font-weight:bold;
+}
+.block-description{
+	
+	color: #FFFFFF;
+	background-color: #81b3d2;
+}
+.block-description h2{
+	font-size: 21px;
+	line-height: 21px;
+	font-weight:bold;
+}
+.block-description span, p{
+	font-size: 14px;
+	line-height: 21px;
+}
+.block-advantages{
+	color: #000000;
+	background-color: #eeeeee;
+}
+.block-advantages h2{
+	font-size: 21px;
+	line-height: 21px;
+}
+.block-advantages span, p{
+	font-size: 14px;
+	line-height: 21px;
+}
+.block-result{
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.block-result h2{
+	font-size: 30px;
+	line-height: 36px;
+	font-weight:bold;
+}
+.block-result p{
+	font-size: 14px;
+	line-height: 24px;
+}
+.block-result a{
+	color: #FFFFFF;
+	background-color: #766357;
+	font-size: 21px;
+	line-height: 26px;
+	
+}
+
+.block-result a:hover {
+	
+	background-color: #604e43;
+}
+.block-result a:active {
+	
+	background-color: #503e33;
+}
+.block-map {
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight:bold;
+	
+}
+.block-map input{
+	background-color: #f2f2f2;
+	font-weight:bold;
+}
+.block-map input:hover{
+	background-color: #ebebeb;
+	
+}
+.block-map input:focus{
+	background-color: #ffffff;
+}
+.date-arrival img,
+.date-departure img{
+	background-color: ##FFFFFF;
+}
+
+.search button{
+	color: #FFFFFF;
+	background-color: #81b3d2;
+	font-weight:bold;
+}
+.search button:hover {
+	background-color: #669ec0;
+}
+.search button:active {
+	color:#94b9d2;
+	background-color: #5496bd;
+}
+.form-search-additional button {
+	color: #000000;
+	background-color: #ebebeb;
+	font-weight:bold;
+}
+.form-search-additional button:hover,
+.date-arrival img:hover,
+.date-departure img:hover{
+	background-color: #000000;
+}
+.form-search-additional button:active,
+.date-arrival img:active,
+.date-departure img:active {
+	background-color: #81b3d2;
+}
+.main-footer {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.main-footer-left a {
+	font-weight:bold;
+	color: #000000;
+	list-style: none;
+}
+.form-filter {
+	
+	background:url(/img/background.jpg);
+	
+}
+.filter {
+	
+	line-height: 26px;
+	color: #FFFFFF;
+	list-style: none;
+	
+}
+.form_filter_infrastructure p {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight:bold;
+	
+}
+.form_filter_infrastructure ul {
+	font-size: 14px;
+	line-height: 21px;
+	list-style: none;
+	
+}
+.cost-filter {
+	
+	width: 330px;
+	margin: 50px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.cost {
+	
+	margin-bottom: 9px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+}
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	
+}
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate (-50%,-50%);
+}
+.price-controls label {
+	display: inline-block;
+	font-size: 14px;
+	
+	line-height: 38px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 64px;
+}
+.price-controls input {
+	width: 60px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	background: none;
+	border: none;
+	
+}
+.range-controls {
+	
+	position: relative;
+	margin-bottom: 32px;
+}
+.range-controls .scale {
+	height: 2px;
+	background: rgba (255, 255, 255, 0.3);
+	
+}
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+	
+}
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+	
+}
+.range-toggle: hover{
+	background: #1c4f80;
+}
+.range-toggle-min {
+	left: 0;
+}
+.range-toggle-max {
+	left: 80%;
+}
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+	
+}
+.btn-transparent:hover {
+	color: #000000;
+	background: #ffffff;
+}
+.sorting {
+	
+	background-color: #FFFFFF;
+	
+}
+.sorting-result {
+	
+	font-size: 21px;
+	line-height: 26px;
+	font-weight:bold;
+}
+.sorting-forms p, ul {
+	
+	font-size: 12px;
+	line-height: 18px;
+	list-style: none;
+	color:# ;
+}
+.sorting-forms li{
+ text-decoration: underline;
+}
+ .sorting-forms .active-sort {
+ text-decoration: none;
+	 color: #a3c7de;
+	background: #ffffff;
+	 
+	 }
+ .sorting-forms li:hover {
+	color: #cde1ed;
+	background: #ffffff;
+	 
+	 }
+ .sorting-forms li:focus {
+	color: #000000;
+	background: #ffffff;
+	 
+	 }
+	 .form_sort {
+		 
+	background: #ffffff;	 
+		font-size: 14px;
+	line-height: 21px; 
+		 }
+.hotel-name {
+	
+	font-size: 21px;
+	line-height: 26px;
+	font-weight:bold;
+	
+}
+.more .button {
+		
+	color: #ffffff;
+	background: #81b3d2;	
+	font-weight:bold;
+		}
+.book .button-right {
+	color: #ffffff;
+	background: #766357;	
+	font-weight:bold;
+	
+}
+.more .button:hover {
+		
+	color: #ffffff;
+	background: #669ec0;	
+		}
+.more .button:focus {
+		
+	color: #ffffff;
+	background: #669ec0;	
+		}
+.book .button-right:hover {
+	color: #ffffff;
+	background: #604e43;	
+	
+}
+.book .button-right:hover {
+	color: #857871;
+	background: #503e33;	
+}
+.form-sort-top-total {
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
+	background: #f2f2f2;	
+}

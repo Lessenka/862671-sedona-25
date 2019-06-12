@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
-		
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		
@@ -13,15 +15,13 @@
 					<li><a href="information.html">ИНФОРМАЦИЯ</a></li>
 					<li><a href="album.html">ФОТО И ВИДЕО</a></li>
 					<li><a href="cart.html">КАРТА ШТАТА</a></li>
-					<li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
-				</ul>	
+					<li class="active"><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+				</ul>
+				<a class="main-logo" href="index.html" aria-label="Переход на главную страницу Седоны"><img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип Седоны"></a> 
 			</nav>
-			<div class="main-logo">
-				<a href="index.html" aria-label="Переход на главную страницу Седоны"><img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип Седоны"></a> 
-			</div>
 		</header>
-		<main>
-			<section class="form_filter">
+		<main class="main-filter">
+			<section class="form-filter">
 				<h2 class="visually-hidden">Параметры отбора</h2>
 				<div class="form_filter_infrastructure">
 					
@@ -63,14 +63,20 @@
 						
 					</form>
 				</div>
-				<div>
-					<p class="cost">СТОИМОСТЬ В СУТКИ(Р):</p>
-					<form class="appointment-cost" action="https://echo.htmlacademy.ru" method="post">
-						<p><input type="text" name="from" value="" placeholder="ОТ 0">
-						<input type="text" name="to" value="" placeholder="ДО 3000"></p>
-						<p><input type="range" min="0" max="3000" step="10" value="50"> </p>
-						<button class="button" tabindex="0" >ПОКАЗАТЬ</button>
-					</form> 
+				<div class="cost-filter">
+					<div class="cost">СТОИМОСТЬ В СУТКИ(Р):</div>
+					<div class="price-controls">
+						<label class="min-price"> ОТ <input type="text" name="min-price" value="0"></label>
+						<label class="max-price"> ДО <input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button class="btn-transparent" type="submit">ПОКАЗАТЬ</button>
 				</div>
 			</section>
 			<section class="sorting">
@@ -78,11 +84,12 @@
 				<div class="sorting-result">
 					<p>НАЙДЕНО:3</p>
 				</div>
-				<div class="sorting-form">
-					<ul class="sorting-form-choice">
-						<li>ПО ЦЕНЕ</li>	
-						<li><span style="text-decoration: underline;">ПО ТИПУ</span></li>	
-						<li><span style="text-decoration: underline;">ПО РЕЙТИНГУ</span></li>		
+				<div class="sorting-forms">
+					<p class="sorting-form-choice">СОРТИРОВКА:</p>
+					<ul>
+						<li class="active-sort">ПО ЦЕНЕ</li>	
+						<li>ПО ТИПУ</li>	
+						<li> ПО РЕЙТИНГУ</li>		
 					</ul>
 				</div>
 				<div class="sorting-picture">
@@ -109,16 +116,16 @@
 						<div>
 							<p class="cost-apartament">ОТ 4000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
+								<button class="button-right" tabindex="0">ЗАБРОНИРОВАТЬ</button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 						</div>
 						<div class="form-sort-top-total">
 							<p >РЕЙТИНГ:8,5</p>
@@ -145,15 +152,15 @@
 						<div>
 							<p class="cost-apartament">ОТ 3000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
+								<button class="button-right" tabindex="0">ЗАБРОНИРОВАТЬ</button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 							
 						</div>
 						<div class="form-sort-top-total">
@@ -181,14 +188,14 @@
 						<div>
 							<p class="cost-apartament">ОТ 2000 Р.</p>
 							<form class="book" action="https://echo.htmlacademy.ru" method="post">
-								<button class="button" tabindex="0">ЗАБРОНИРОВАТЬ"></button>
+								<button class="button-right" tabindex="0">ЗАБРОНИРОВАТЬ</button>
 							</form>
 						</div>
 					</div>
 					<div class="form-sort-top">
 						<div class="form-sort-top-stars" >
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
-							<span class="visually-hidden"><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
+							<span class=""><img src="img/star.svg" width="10" height="10" alt="Звездочка"></span>
 							
 							
 							
